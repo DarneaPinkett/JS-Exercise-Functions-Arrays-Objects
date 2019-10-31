@@ -83,9 +83,18 @@ getName({
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-function makeSmartPerson(/* code here */) {
-  /* code here */
-}
+function makeSmartPerson(person) {
+  return myObj = {
+    name: name,
+    sum: function(a,b) {
+      return a + b;
+    },
+    speak: function() {
+      return 'Hello, my name is ${person.name}';
+    }
+  };
+};
+makeSmartPerson();
 
 /**
  * ### Challenge `getCarInfoByIndex`
@@ -99,9 +108,15 @@ function makeSmartPerson(/* code here */) {
  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoByIndex(/* code here */) {
-  /* code here */
+function getCarInfoByIndex(array, num) {
+  return 'This is a ${car_make} ${car_model}';
 }
+  getCarInfoByIndex({
+    id: 1,
+    car_make: "Lincoln",
+    car_model: "Navigator"
+  });
+
 
 /**
  * ### Challenge `getLastCarInfo`
