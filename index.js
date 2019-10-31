@@ -83,14 +83,14 @@ getName({
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-function makeSmartPerson(person) {
+function makeSmartPerson(name) {
   return myObj = {
     name: name,
     sum: function(a,b) {
       return a + b;
     },
     speak: function() {
-      return 'Hello, my name is ${person.name}';
+      return `Hello, my name is ${name}`;
     }
   };
 };
@@ -108,8 +108,8 @@ makeSmartPerson();
  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoByIndex(array, num) {
-  return 'This is a ${car_make} ${car_model}';
+function getCarInfoByIndex(array, i) {
+  return array[i];
 }
   getCarInfoByIndex({
     id: 1,
