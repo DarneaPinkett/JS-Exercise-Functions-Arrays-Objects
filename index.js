@@ -187,7 +187,7 @@ function getModelYears(arr) {
    return years;
 }
 
-getModelYears(inventory)
+getModelYears();
 
 /**
  * ### Challenge `getOlderCars`
@@ -201,9 +201,17 @@ getModelYears(inventory)
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(/* code here */) {
-  /* code here */
+function getOlderCars(arr, num) {
+  const cars = [];
+  const inventory = arr;
+  for(let i = 0; i <inventory.length; i++){
+    let oldestCar = inventory[i];
+    cars.push(oldestCar.car_year)
+  }
+  return cars;
 }
+
+getOlderCars();
 
 /**
  * ### Challenge `getGermanCars`
@@ -238,12 +246,12 @@ function getGermanCars(/* code here */) {
  *   return num * 2
  * }
 */
-const sum = (a, b) => a+b;
-const addFive = null; // code here!
-const argTimesTwo = null; // code here!
+const sum = (a, b) => a + b;
+const addFive = (num) => num + 5;
+const argTimesTwo = (num) => num * 2
 
 /**
- * ### Challenge `carMaker`
+ * ### Challenge `carMaker`q
  * THIS ONE IS A STRETCH GOAL. ATTEMPT IT ONLY AFTER
  * COMPLETING ALL NON-STRETCH CHALLENGES IN THE REPOSITORY!
  * 
